@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "homepage": "https://github.com/nathanhammond/screenshot-client",
   "authors": [
-    "Nathan Hammond <github.com@nathanhammond.com>"
+    "Nathan Hammond <nathan@nathanhammond.com>"
   ],
   "description": "screenshot-client polyfills the nonexistent but entirely necessary `window.takeScreenshot()` for visual browser testing in pair with screenshot-server.",
   "keywords": [
