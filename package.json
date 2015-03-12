@@ -1,0 +1,27 @@
+{
+  "name": "screenshot-client",
+  "version": "0.0.1",
+  "description": "screenshot-client polyfills the nonexistent but entirely necessary `window.takeScreenshot()` for visual browser testing in pair with screenshot-server.",
+  "main": "screenshot-client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nathanhammond/screenshot-client.git"
+  },
+  "keywords": [
+    "screenshot",
+    "selenium",
+    "webdriver",
+    "takeScreenshot"
+  ],
+  "author": "Nathan Hammond",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nathanhammond/screenshot-client/issues"
+  },
+  "homepage": "https://github.com/nathanhammond/screenshot-client",
+  "dependencies": {
+  }
+}

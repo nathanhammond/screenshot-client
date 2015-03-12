@@ -1,7 +1,7 @@
 (function(window, document, querystring) {
   // TODO: Make fault tolerant.
-  var screenshotServerURL = /screenshotServerURL=([^&]*)/.match(querystring);
-  var screenshotClientID = /screenshotClientID=([^&]*)/.match(querystring);
+  var screenshotServerURL = decodeURIComponent(/screenshotServerURL=([^&]*)/.exec(querystring)[1]);
+  var screenshotClientID = decodeURIComponent(/screenshotClientID=([^&]*)/.exec(querystring)[1]);
 
   // Don't redefine an existing function.
   if (window.takeScreenshot) { return; }
