@@ -15,7 +15,7 @@
       innerHeight: window.innerHeight
     }));
 
-    var endpoint = screenshotServerURL + '?screenshotClientID=' + screenshotClientID + '&metadata=' + metadata;
+    var endpoint = screenshotServerURL + 'takeScreenshot?screenshotClientID=' + screenshotClientID + '&metadata=' + metadata;
     var xhr = new XMLHttpRequest();
 
     if (!asynchronous) {
