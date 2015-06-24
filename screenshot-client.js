@@ -9,15 +9,19 @@
   window.takeScreenshot = function(asynchronous) {
     // TODO: Collect metadata.
     // TODO: Ensure that this escapes correctly.
+
+    // TODO: Find a better way to get the testId from qunit.
+    var testid = (document.getElementsByClassName('running')[0].id).replace('qunit-test-output-','');
+
     var metadata = encodeURIComponent(JSON.stringify({
       scrollHeight: document.body.scrollHeight,
       outerHeight: window.outerHeight,
       innerHeight: window.innerHeight
     }));
 
-    var endpoint = screenshotServerURL + 'takeScreenshot?screenshotClientID=' + screenshotClientID + '&metadata=' + metadata;
+    var endpoint = screenshotServerURL + 'takeScreenshot?screenshotClientID=' + screenshotClientID + '&testid=' + testid + '&metadata=' + metadata;
     var xhr = new XMLHttpRequest();
-
+    
     if (!asynchronous) {
       xhr.open("POST", endpoint, false);
       xhr.send();
