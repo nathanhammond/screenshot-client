@@ -1,7 +1,7 @@
 {
   "name": "screenshot-client",
   "main": "screenshot-client.js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/nathanhammond/screenshot-client",
   "authors": [
     "Nathan Hammond <nathan@nathanhammond.com>"

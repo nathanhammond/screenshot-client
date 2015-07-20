@@ -1,6 +1,6 @@
 {
   "name": "screenshot-client",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "screenshot-client polyfills the nonexistent but entirely necessary `window.takeScreenshot()` for visual browser testing in pair with screenshot-server.",
   "main": "screenshot-client.js",
   "scripts": {
